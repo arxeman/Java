@@ -7,10 +7,6 @@ class Date
 {
     String date;
     int d,m,y;  //initializing variables for date, month and year
-    /*public Date(String s)  //constructor
-    {
-        date=s;
-    }*/
     void accept()
     {
         Scanner sc=new Scanner(System.in);
