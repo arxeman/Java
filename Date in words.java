@@ -113,7 +113,7 @@ class Date
             word=word+month[m-1]+" ";
             //year conversion
             if(y/100<20)  //when year<2000
-                word+=dd[y/100-10]+"v"+td[0]+" ";
+                word+=dd[y/100-10]+" "+td[0]+" ";
             else  //when year>=2000
                 word+=sd[y/1000-1]+" "+td[1]+" ";
             y=y%100;
