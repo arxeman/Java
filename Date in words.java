@@ -102,8 +102,11 @@ class Date
             if(d>=10 && d<20)
                word=word+dd[d-10]+" ";
             if(d>20)
+            {   
                 word=word+tens[d/10-2]+" ";
-            d=d%10;  //to extract the one's digit value
+                d=d%10;  //to extract the one's digit value
+            }
+            
             if(d>=1 && d<10)
                 word=word+sd[d-1]+" ";
             //month conversion
