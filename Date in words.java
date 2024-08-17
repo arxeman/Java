@@ -90,7 +90,8 @@ class Date
     void toWords()
     {
         //array inputs for converting into words
-        String sd[]={"One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+        String sd[]={"First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth"};
+        String sd2[]={"One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
         String dd[]={"Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
         String tens[]={"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
         String td[]={"Hundred","Thousand"};
@@ -115,7 +116,7 @@ class Date
             if(y/100<20)  //when year<2000
                 word+=dd[y/100-10]+" "+td[0]+" ";
             else  //when year>=2000
-                word+=sd[y/1000-1]+" "+td[1]+" ";
+                word+=sd2[y/1000-1]+" "+td[1]+" ";
             y=y%100;
             if(y>=10 && y<20)
                 word+=dd[y-10]+" ";
@@ -125,7 +126,7 @@ class Date
                     word+=tens[y/10-2]+" ";
                 y=y%10;
                 if(y>0 && y<10)
-                    word+=sd[y-1]+" ";
+                    word+=sd2[y-1]+" ";
             }
             System.out.print("Date in words: "+word);  //displaying date in words
         }
