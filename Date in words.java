@@ -1,6 +1,7 @@
 /*
 A program to convert given date in "dd/mm/yyyy" format to words
 this program also checks for invalid date
+year should be in the range 1947 to 2047
 */
 import java.util.*;
 class Date
